@@ -1,0 +1,64 @@
+<p style="text-align: center">
+ <img src="img/Goose.png" style="position: relative">
+</p>
+ <script>let Goose = document.querySelector("img");
+ let angle = Math.PI / 2;
+ function animate(time, lastTime) {
+  if (lastTime != null) {angle += (time - lastTime) * 0.001;
+  }
+  Goose.style.top = (Math.sin(angle) * 10) + "px";
+  Goose.style.left = (Math.cos(angle) * 100) + "px";
+  requestAnimationFrame(newTime => animate(newTime, time));
+  }
+  requestAnimationFrame(animate);
+  </script>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>My Colorful Goose Paper</title>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/page.css">
+   </head>
+    <body>
+     <header class="main-header">
+      <h1>My Colorful Goose Paper</h1>
+       <p>This a good entertainment for people Who like to do the hoppy!. So, "How To make A Goose Paper?" Please follow step by step here.</p>
+     </header><!--/.main-header-->
+      <div class="row">		
+       <div class="primary col">
+        <h2>Step 1:</h2>
+        <p>You cut the Paper into a rectangle, the length is 3 inches x the width is 1 inch. Then fold it a half. Like this:</p>
+        <p class="aligncenter">   
+        <img src="img/Rectangle.jpg" alt="center img" />
+        </p>
+      </div><!--/.primary-->
+       <div class="secondary col">
+        <h2>Step 2:</h2>
+         <p>Then fold the two sides into triangle. Next, fold the remain off. Then cut off the remain of the triangle paper. Like this:</p>
+         <p class="aligncenter">
+         <img src="img/Triangle.jpg">  <img src="img/ComplTriangle.jpg" alt="center img" />
+         </p>
+        </div><!--/.secondary-->
+      <div class="tertiary col">
+       <h2>Step 3:</h2>
+       <p>Group them together until it goes to circle. Like this:</p>
+       <p class="aligncenter">
+       <img src="img/Shape.jpg" alt="center img" />
+       </p>
+       <p>Then keep continue to group them. You can combine different colors you want to make the Goose more beautifully.</p>
+       <p class="aligncenter">
+       <img src="img/GooseBody.jpg" alt="center img" />
+       </p>
+       <p>Finally, you create the two wings, tails, and the head. After you'd done of these things. So!!, then you're completely done your Colorful Goose Paper!. You can see the picture on the font page. It looks beautiful, hooray!!! So good luck and enjoy your hoppy.</p>
+      </div><!--/.tertiary-->	
+     </div>
+    <footer class="main-footer">
+    <span>&copy;2019, by me.</span>
+   </footer>  
+  </body>
+ </html>
+ 

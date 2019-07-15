@@ -1,0 +1,75 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #e58f8f;
+	margin: 0;
+}
+
+p {
+	font-size: .80em;
+ margin-bottom: 5px;
+ margin-top: 5px;
+}
+
+h2 {
+ color: #a972e7;
+ margin-top: .1em;
+ margin-bottom: .1em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.main-footer {
+ text-align: center;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.main-footer {
+	background: #d9e4ea;
+	padding: 1em 0;
+	margin-top: 20px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
